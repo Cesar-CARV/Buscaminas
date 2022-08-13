@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ESTYLES -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/board.css">
+    <!-- BUSTRAPICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Buscaminas :D</title>
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul class="menu-list">
+                <!-- config -->
+                <li class="menu-list__item">
+                    <button type="button" class="menu-button">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </li>
+                <!-- time -->
+                <li class="menu-list__item">
+                    <div>
+                        <p id="menu-list__item--time">00:00</p>
+                        <i class="bi bi-stopwatch-fill"></i>
+                    </div>
+                </li>
+                <!-- less mines -->
+                <li class="menu-list__item">
+                    <div>
+                        <p id="menu-list__item--less-mines">50</p>
+                        <i class="bi bi-dash-circle-fill"></i>
+                    </div>
+                </li>
+                <!-- flags -->
+                <li class="menu-list__item">
+                    <div>
+                        <p id="menu-list__item--flags">0</p>
+                        <i class="bi bi-flag-fill"></i>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- submenu config -->
+            <form class="config config--hide">
+                <!-- dificultys -->
+                <div class="config__item config__dificultys">
+                    <label for="dificulty--easy">
+                        <input type="radio" name="dificultys" id="dificulty--easy" checked> Easy
+                    </label>
+                    
+                    <label for="dificulty--normal">
+                        <input type="radio" name="dificultys" id="dificulty--normal">
+                        Normal
+                    </label>
+                    <label for="dificulty--medium">
+                        <input type="radio" name="dificultys" id="dificulty--medium">
+                        Medium
+                    </label>
+                    <label for="dificulty--hard">
+                        <input type="radio" name="dificultys" id="dificulty--hard">
+                        Hard
+                    </label>
+                </div>
+
+                <!-- Colors -->
+                <div class="config__item config__colors">
+                    <label for="colors--white">
+                        <input type="radio" name="colors" id="colors--white" checked>
+                        white
+                    </label>
+                    <label for="colors--gray">
+                        <input type="radio" name="colors" id="colors--gray">
+                        Gray
+                    </label>
+                    <label for="colors--black">
+                        <input type="radio" name="colors" id="colors--black">
+                        Black
+                    </label>
+                    <label for="colors--green">
+                        <input type="radio" name="colors" id="colors--green">
+                        Green
+                    </label>
+                    <label for="colors--blue">
+                        <input type="radio" name="colors" id="colors--blue">
+                        Blue
+                    </label>
+                </div>
+
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="game">
+            <div class="board d-flex justify-center align-center">
+                <canvas id="canvas" style="image-rendering: pixelated;">
+                </canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/cell.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* 
+let COLORS = {
+    white: {cell:"#fff", bg:"#eee", br:"#999", boomb: "#faa", txt: "#555"}, 
+    gray:  {cell:"#fff", bg:"#eee", br:"#999", boomb: "#faa", txt: "#555"},
+    green: {cell:"#fff", bg:"#eee", br:"#999", boomb: "#faa", txt: "#555"},
+    blue:  {cell:"#fff", bg:"#eee", br:"#999", boomb: "#faa", txt: "#555"},
+} 
+*/
+
+:root{
+    /* white */
+    --theme-white-cell: #fff;
+    --theme-white-bg: #eee;
+    --theme-white-br: #999;
+    --theme-white-boomb: #faa;
+    --theme-white-text: #555;
+
+}
+
+.menu{
+    position: relative;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-white-text);
+}
+
+.menu-button{
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    font-size: x-large;
+    background-color: transparent;
+}
+
+.menu-list{
+    border: solid 1px var(--theme-white-br);
+    border-radius: 5px;
+    padding: 5px 10px ;
+
+    list-style: none;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--theme-white-bg);
+}
+
+.menu-list__item{
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu-list__item div{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.config--hide{
+    display: none;
+}
+
+.config{
+    position: absolute;
+    top: 15vh;
+    margin: 5px 50px;
+
+    border: solid 1px var(--theme-white-br);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--theme-white-bg);
+}
+
+.config button[type = "submit"]{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+     
+}
+
+.config__item{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: solid 1px var(--theme-white-br);
+}
+
+.config__colors__form__custom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.config__colors__form__custom input[type = "color"]{
+    width: 35px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Grid */
+.d-flex{
+    display: flex;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-left{
+    justify-content: left;
+}
+
+.justify-right{
+    justify-content: right;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items: flex-end;
+}
